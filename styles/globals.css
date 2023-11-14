@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: "Gilroy";
+        src: url("/assets/fonts/Gilroy-ExtraBold.eot");
+        src: local("Gilroy ExtraBold"), local("Gilroy-ExtraBold"),
+            url("/assets/fonts/Gilroy-ExtraBold.eot?#iefix")
+                format("embedded-opentype"),
+            url("/assets/fonts/Gilroy-ExtraBold.woff") format("woff"),
+            url("/assets/fonts/Gilroy-ExtraBold.ttf") format("truetype");
+        font-weight: 800;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: "Montserrat";
+        src: url("/assets/fonts/Montserrat-Light.eot");
+        src: local("Montserrat Light"), local("Montserrat-Light"),
+            url("/assets/fonts/Montserrat-Light.eot?#iefix")
+                format("embedded-opentype"),
+            url("/assets/fonts/Montserrat-Light.woff") format("woff"),
+            url("/assets/fonts/Montserrat-Light.ttf") format("truetype");
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: "Montserrat";
+        src: url("/assets/fonts/Montserrat-Medium.eot");
+        src: local("Montserrat Medium"), local("Montserrat-Medium"),
+            url("/assets/fonts/Montserrat-Medium.eot?#iefix")
+                format("embedded-opentype"),
+            url("/assets/fonts/Montserrat-Medium.woff") format("woff"),
+            url("/assets/fonts/Montserrat-Medium.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    body {
+        font-family: Gilroy;
+    }
+
+    html, body, #__next, main {
+        min-width: 100%;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    section {
+        min-height: 100vh;
+        width: 100%;
+    }
+
+    :root {
+        --swiper-theme-color: #000000 !important;
+    }
+}
